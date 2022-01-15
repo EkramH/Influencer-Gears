@@ -1,6 +1,9 @@
 /* Font */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 
+/*---------- 
+Common Style 
+----------*/
 * {
   margin: 0;
   padding: 0;
@@ -312,6 +315,8 @@ Media Query
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+/* Small Laptop Device */
 
 @media only screen and (min-width: 668px) and (max-width: 1024px) {
   .collection,
