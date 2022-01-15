@@ -240,7 +240,7 @@ Media Query
     width: 100%;
   }
 
-  nav {
+  .navigation {
     display: none;
   }
 
@@ -290,7 +290,7 @@ Media Query
     width: 100%;
   }
 
-  nav {
+  .navigation {
     display: none;
   }
 
