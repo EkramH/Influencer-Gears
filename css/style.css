@@ -143,11 +143,25 @@ Popular Collection
   font-weight: 100;
 }
 
-.fas {
+.fa-star,
+.fa-star-half-alt {
   font-size: 14px;
   color: #fb8200;
 }
 
-.fas span {
+.item-info span {
   color: #5e6366;
+}
+
+.item-details p {
+  color: #787885;
+}
+
+.btn-more {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: #e02c6d;
+  float: right;
+  margin: 50px;
 }
