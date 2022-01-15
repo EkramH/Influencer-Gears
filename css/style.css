@@ -114,7 +114,7 @@ Brand Logo Section
 /*---------- 
 Popular Collection
 ----------*/
-.collection-title {
+.section-title {
   font-size: 28px;
   font-weight: 600;
   color: #3a3a3a;
@@ -177,6 +177,19 @@ Popular Collection
   margin: 50px;
 }
 
+/*---------- 
+Latest Product
+----------*/
+.product {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.video-frame {
+  width: 330px;
+  height: 300px;
+}
 /*---------- 
 Footer
 ----------*/
@@ -252,7 +265,8 @@ Media Query
     justify-content: center;
   }
 
-  .collection {
+  .collection,
+  .product {
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
     justify-content: center;
@@ -278,7 +292,8 @@ Media Query
     font-size: 35px;
   }
 
-  .collection {
+  .collection,
+  .product {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
@@ -289,7 +304,8 @@ Media Query
 }
 
 @media only screen and (min-width: 668px) and (max-width: 1024px) {
-  .collection {
+  .collection,
+  .product {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
