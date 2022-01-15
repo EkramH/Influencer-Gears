@@ -198,6 +198,12 @@ footer {
 
 /* Media Query */
 
+/* Mobile Device */
+@media only screen and (max-width: 668px) {
+}
+
+/* Tablet Device */
+
 @media only screen and (min-width: 668px) and (max-width: 992px) {
   .container {
     width: 100%;
