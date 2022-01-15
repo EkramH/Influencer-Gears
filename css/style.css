@@ -77,11 +77,22 @@ Banner section
   color: #fff;
   font-weight: 700;
   border: none;
+  transition: transform 1.5s ease-out;
+}
+
+.banner-button:hover {
+  transform: scale(1.1);
+  box-shadow: #c0ccda;
 }
 
 .banner-right img {
   width: 440px;
   height: 414px;
+  transition: transform 1s ease-in-out;
+}
+
+.banner-right img:hover {
+  transform: rotate(40deg);
 }
 
 /*---------- 
@@ -196,10 +207,56 @@ footer {
   height: 32px;
 }
 
-/* Media Query */
+/*-------------- 
+Media Query
+------------- */
 
 /* Mobile Device */
 @media only screen and (max-width: 668px) {
+  .container {
+    width: 100%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .banner {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .banner img {
+    width: 202px;
+    height: 190px;
+  }
+
+  .banner-title {
+    font-size: 28px;
+  }
+
+  .banner-info {
+    font-size: 14px;
+  }
+
+  .banner-left {
+    order: 2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .brand-logos {
+    grid-template-columns: repeat(2, 1fr);
+    border: none;
+    justify-content: center;
+  }
+
+  .collection {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    justify-content: center;
+  }
 }
 
 /* Tablet Device */
@@ -210,7 +267,7 @@ footer {
   }
 
   nav {
-    margin-bottom: 0;
+    display: none;
   }
 
   .banner {
@@ -226,6 +283,16 @@ footer {
     gap: 20px;
   }
 
+  .brand-logos {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (min-width: 668px) and (max-width: 1024px) {
+  .collection {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
   .brand-logos {
     grid-template-columns: repeat(4, 1fr);
   }
